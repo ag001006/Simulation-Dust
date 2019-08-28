@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "CharacterData_New", menuName = "ScriptableObjects/CharacterData")]
 public class CharacterData : ScriptableObject
 {
     public string CharacterName = string.Empty;
@@ -23,13 +24,13 @@ public enum ClassType
     Supporter
 }
 
-public struct BasicAbility
+[System.Serializable] public struct BasicAbility
 {
-    public float Damage = 0;
-    public float Health = 0;
-    public float Reduce = 0;
-    public float Critical = 0;
-    public float CriticalEffect = 0;
-    public float Dodge = 0;
+    [SerializeField] public float Damage;
+    [SerializeField] public float Health;
+    [SerializeField] public float Reduce;
+    [SerializeField] public float Critical;
+    [SerializeField] public float CriticalEffect;
+    [SerializeField] public float Dodge;
 }
 
