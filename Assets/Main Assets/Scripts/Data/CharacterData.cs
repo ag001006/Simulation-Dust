@@ -7,6 +7,7 @@ public class CharacterData : ScriptableObject
 {
     public string CharacterName = string.Empty;
     public ClassType classType = 0;
+    public int grade = 0;
     public BasicAbility basicAbility = new BasicAbility();
     public Texture icon;
 }

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df59dd33ce421e2408a292a271ac430c, type: 3}
+  m_Name: CharacterData_Denarisa
+  m_EditorClassIdentifier: 
+  CharacterName: "\u5FB7\u5A1C\u9E97\u838E"
+  classType: 1
+  grade: 4
+  basicAbility:
+    Damage: 0
+    Health: 0
+    Reduce: 0
+    Critical: 0
+    CriticalEffect: 0
+    Dodge: 0
+  icon: {fileID: 2800000, guid: 29b87d5396fcce5448a37a05fb569de7, type: 3}

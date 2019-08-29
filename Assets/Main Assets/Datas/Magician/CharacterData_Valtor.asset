@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df59dd33ce421e2408a292a271ac430c, type: 3}
+  m_Name: CharacterData_Valtor
+  m_EditorClassIdentifier: 
+  CharacterName: "\u5DF4\u723E\u6258\u52D2"
+  classType: 2
+  grade: 5
+  basicAbility:
+    Damage: 0
+    Health: 0
+    Reduce: 0
+    Critical: 0
+    CriticalEffect: 0
+    Dodge: 0
+  icon: {fileID: 2800000, guid: cc4ac7a502192ad40a0ab8cb96997300, type: 3}

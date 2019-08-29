@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df59dd33ce421e2408a292a271ac430c, type: 3}
-  m_Name: CharacterData_
+  m_Name: CharacterData_Kozak
   m_EditorClassIdentifier: 
-  CharacterName: 
+  CharacterName: "\u845B\u85A9\u514B"
   classType: 0
+  grade: 3
   basicAbility:
     Damage: 0
     Health: 0
@@ -21,4 +22,4 @@ MonoBehaviour:
     Critical: 0
     CriticalEffect: 0
     Dodge: 0
-  icon: {fileID: 0}
+  icon: {fileID: 2800000, guid: a1ccae4b5daf8fa4491d8981966eb755, type: 3}

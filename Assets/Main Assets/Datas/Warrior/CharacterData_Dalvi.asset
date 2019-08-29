@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterName: "\u9054\u975E"
   classType: 0
+  grade: 5
   basicAbility:
     Damage: 0
     Health: 0
