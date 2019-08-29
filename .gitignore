@@ -1,2 +1,6 @@
 Library/
 Temp/
+obj/
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
+.vs/
