@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df59dd33ce421e2408a292a271ac430c, type: 3}
-  m_Name: CharacterData_Wihelmina
+  m_Name: CharacterData_Wilhelmina
   m_EditorClassIdentifier: 
   CharacterName: "\u5A01\u5EC9\u660E\u5A1C"
   classType: 0
@@ -23,3 +23,4 @@ MonoBehaviour:
     CriticalEffect: 0
     Dodge: 0
   icon: {fileID: 2800000, guid: 4e074d906a007964196cde11c320b15f, type: 3}
+  icon_Sprite: {fileID: 21300000, guid: 4e074d906a007964196cde11c320b15f, type: 3}

@@ -10,6 +10,7 @@ public class CharacterData : ScriptableObject
     public int grade = 0;
     public BasicAbility basicAbility = new BasicAbility();
     public Texture icon;
+    public Sprite icon_Sprite;
 }
 
 /// <summary> 職業 </summary>

@@ -20,18 +20,29 @@ SpriteAtlas:
       readable: 0
       crunchedCompression: 0
       sRGB: 1
-    platformSettings: []
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
     packingSettings:
       serializedVersion: 2
-      padding: 4
+      padding: 8
       blockOffset: 1
       allowAlphaSplitting: 0
-      enableRotation: 1
-      enableTightPacking: 1
+      enableRotation: 0
+      enableTightPacking: 0
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: faecfe94a42e9644eaf50167572eec83, type: 3}
-    totalSpriteSurfaceArea: 2442275
+    totalSpriteSurfaceArea: 2507811
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -263,6 +274,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8d3260ee0b7c6a741be32a88b61ef4d4, type: 3}
   - {fileID: 21300000, guid: 0f0e4c0f1c8c24f4ba928bac611b6d21, type: 3}
   - {fileID: 21300000, guid: 0ce74d1f3700be34c88bc9381f5e4a09, type: 3}
+  - {fileID: 21300000, guid: 3c168d1fed444744a95b9707f92a9a6e, type: 3}
   - {fileID: 21300000, guid: 8e14d24fab9d0114088e764e65142ac5, type: 3}
   - {fileID: 21300000, guid: 6c69a85fa120e02489956d8b6e771939, type: 3}
   - {fileID: 21300000, guid: b162b77f717095546b5bd1a951459f9b, type: 3}
@@ -503,6 +515,7 @@ SpriteAtlas:
   - Icon_Character_Taylor
   - Icon_Character_Mary
   - Icon_Character_Noel
+  - Round Square
   - Icon_CharacterType_Warrior
   - Icon_Character_Agaron
   - Icon_Character_Lumen

@@ -23,3 +23,4 @@ MonoBehaviour:
     CriticalEffect: 0
     Dodge: 0
   icon: {fileID: 2800000, guid: 495a018df40d47c41a91d2574c6b4144, type: 3}
+  icon_Sprite: {fileID: 21300000, guid: 495a018df40d47c41a91d2574c6b4144, type: 3}
