@@ -84,12 +84,23 @@ public class CharacterGrid : MonoBehaviour
         // 檢查欄位及是否重複, 有欄位且沒重複則指定值
         if (grid != null && !SiteManager.instance.CheckRepeat(Input.mousePosition, currentGrid.characterIcon.sprite))
         {
+            if (grid.orderGroup.alpha == 1)
+            {
+                int result = 0;
+                int.TryParse(grid.orderText.text, out result);
+                grid.orderText.text = SiteManager.instance.SetCharactersNumber(Input.mousePosition, clone, result).ToString();
+            }
+            else
+                grid.orderText.text = SiteManager.instance.SetCharactersNumber(Input.mousePosition, clone).ToString();
+
             grid.orderGroup.alpha = 1;
             grid.characterData = characterData;
             grid.backGround.color = currentGrid.backGround.color;
             grid.characterIcon.sprite = currentGrid.characterIcon.sprite;
-            grid.orderText.text = SiteManager.instance.SetCharactersNumber(Input.mousePosition, clone).ToString();
         }
+
+        if (grid == null && isOnSite)
+            SiteManager.instance.RemoveCharactersNumber(Input.mousePosition, clone);
 
         // 清除 currentGrid
         currentGrid = null;

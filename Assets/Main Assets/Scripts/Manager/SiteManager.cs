@@ -133,6 +133,41 @@ public class SiteManager : MonoBehaviour
         return 0;
     }
 
+    public int RemoveCharactersNumber(Vector3 pos, CharacterGrid grid)
+    {
+        // 如果沒有資料則 return
+        if (grid == null || grid.characterData == null)
+            return 0;
+
+        // 依照檢查座標決定設置我方或敵方清單, 如果次序為0則找最後欄位, 不為0則設置指定欄位
+        if (pos.x < Screen.width * 0.4f)
+        {
+            for (int i = 0; i < ourCharacters.Length; i++)
+                if (ourCharacters[i] == grid.characterData)
+                    for (int j = i + 1; j < ourCharacters.Length; j++)
+                        ourCharacters[j - 1] = ourCharacters[j];
+
+            for (int i = 0; i < ourGrids.Length; i++)
+                for (int j = 0; j < ourCharacters.Length; j++)
+                    if (ourGrids[i].characterData == ourCharacters[j])
+                        ourGrids[i].orderText.text = (j + 1).ToString();
+        }
+        else
+        {
+            for (int i = 0; i < enemyCharacters.Length; i++)
+                if (enemyCharacters[i] == grid.characterData)
+                    for (int j = i + 1; j < enemyCharacters.Length; j++)
+                        enemyCharacters[j - 1] = enemyCharacters[j];
+
+            for (int i = 0; i < enemyGrids.Length; i++)
+                for (int j = 0; j < enemyCharacters.Length; j++)
+                    if (enemyGrids[i].characterData == enemyCharacters[j])
+                        enemyGrids[i].orderText.text = (j + 1).ToString();
+        }
+
+        return 0;
+    }
+
     public void ChangeOrderState()
     {
         showOrder = !showOrder;
